@@ -4,7 +4,7 @@
 * A real-time target detection algorithm for all platforms
 * Combine MobileNet,CspNet,FPN,Attention mechanism...
 * The fastest and smallest known universal target detection algorithm based on yolo
-# Yolo-Fastest
+# Evaluating indicator
 Network|VOC mAP(0.5)|Resolution|Inference time (NCNN/Kirin 990)|FLOPS|Weight size
 :---:|:---:|:---:|:---:|:---:|:---:
 Tiny-YoloV2|57.1%|416|& ms|6.97BFlops|60.5MB

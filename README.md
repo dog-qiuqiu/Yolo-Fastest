@@ -10,7 +10,7 @@
 
 # Evaluating indicator
 Network|VOC mAP(0.5)|Resolution|Inference time (NCNN/Kirin 990)|Inference time (Darknet/i7)|FLOPS|Weight size
-:---:|:---:|:---:|:---:|:---:|:---:
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
 Tiny-YoloV2|57.1%|416|& ms|& ms|6.97BFlops|60.5MB
 Tiny-YoloV3|58.4%|416|& ms|& ms|5.52BFlops|33.4MB
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|320|10.15ms|& ms|0.5BFlops|3.0MB

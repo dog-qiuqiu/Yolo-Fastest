@@ -11,5 +11,5 @@
 Network|VOC mAP(0.5)|Resolution|Inference time (NCNN/Kirin 990)|FLOPS|Weight size
 :---:|:---:|:---:|:---:|:---:|:---:
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|320|10.15ms|0.55BFlops|3.0MB
-Yolo-Fastest|61.86%|320|&ms|0.25BFlops|1.8MB
+Yolo-Fastest|61.86|320|&ms|0.25BFlops|1.8MB
 

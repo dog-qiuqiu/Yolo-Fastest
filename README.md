@@ -1,6 +1,6 @@
 
 
-![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/flash.gif)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 
 # :zap:Yolo-Fastest:zap:
 * A real-time target detection algorithm for all platforms

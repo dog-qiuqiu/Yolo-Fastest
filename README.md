@@ -8,7 +8,7 @@
 * The speed is 25% faster than mobilenetv2-yolov3-nano, and the parameter amount is reduced by 40%
 
 # Evaluating indicator
-Network|VOC mAP(0.5)|Resolution|Inference time (NCNN/Kirin 990)|Inference time (Darknet/i7)|FLOPS|Weight size
+Network|VOC mAP(0.5)|Resolution|Inference time (NCNN/Kirin 990)|Inference time (Darknet/CPU)|FLOPS|Weight size
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|320|10.15ms|77ms|0.55BFlops|3.0MB
 Yolo-Fastest|&%|320|&ms|57ms|0.25BFlops|1.8MB

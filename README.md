@@ -5,7 +5,7 @@
 # :zap:Yolo-Fastest:zap:
 * A real-time target detection algorithm for all platforms
 * The fastest and smallest known universal target detection algorithm based on yolo
-* The speed is 25% faster than mobilenetv2-yolov3-nano, and the parameter amount is reduced by 40%
+* The speed is 45% faster than mobilenetv2-yolov3-nano, and the parameter amount is reduced by 56%
 
 # Evaluating indicator
 Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Weight size

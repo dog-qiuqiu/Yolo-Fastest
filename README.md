@@ -3,6 +3,7 @@
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 
 # :zap:Yolo-Fastest:zap:
+* Simple, fast, compact, easy to transplant
 * A real-time target detection algorithm for all platforms
 * The fastest and smallest known universal target detection algorithm based on yolo
 * The speed is 45% faster than mobilenetv2-yolov3-nano, and the parameter amount is reduced by 56%

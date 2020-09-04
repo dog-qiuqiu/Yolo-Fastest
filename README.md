@@ -15,3 +15,5 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 Yolo-Fastest|&|320|6.74ms|4.42ms|0.23BFlops|1.3MB
 * Test platform Kirin 990
 
+# Test 
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/predictions.jpg)

@@ -31,7 +31,7 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 * 交流qq群:1062122604
 * https://github.com/AlexeyAB/darknet
 ```
-  ./darknet detector train *.data yolo-fastest.cfg yolo-fastest.conv.109 
+  ./darknet detector train voc.data yolo-fastest.cfg yolo-fastest.conv.109 
 ```
 # Thanks
 * https://github.com/AlexeyAB/darknet

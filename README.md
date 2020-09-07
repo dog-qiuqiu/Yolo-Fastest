@@ -13,6 +13,7 @@
 Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Weight size
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|320|11.36ms|5.48ms|0.55BFlops|3.0MB
+[MobileNetV2 SSD-Lite](https://github.com/qfgaohao/pytorch-ssd#mobilenetv2-ssd-lite)|68.60|300|&ms|&ms|&BFlops|13.8MB
 [Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|60.8|320|6.74ms|4.42ms|0.23BFlops|1.3MB
 [Yolo-Fastest-XL](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|68.8|320|15.15ms|7.09ms|0.70BFlops|3.5MB
 * Test platform Kirin 990，Based on [NCNN](https://github.com/Tencent/ncnn)

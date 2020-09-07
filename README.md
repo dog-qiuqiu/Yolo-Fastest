@@ -26,14 +26,12 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 ## Generate a pre-trained model for the initialization of the model backbone
 ```
   ./darknet partial yolo-fastest.cfg yolo-fastest.weights yolo-fastest.conv.109 109
-
 ```
 ## Train
 * 交流qq群:1062122604
 * https://github.com/AlexeyAB/darknet
 ```
   ./darknet detector train *.data yolo-fastest.cfg yolo-fastest.conv.109 
-  
 ```
 # Thanks
 * https://github.com/AlexeyAB/darknet

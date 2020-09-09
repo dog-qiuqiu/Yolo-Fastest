@@ -34,20 +34,22 @@ Just do `make` in the darknet directory. Before make, you can set such options i
 * Set the other options in the `Makefile` according to your need.
 
 # Test/Demo
-*Run Yolo-Fastest , Yolo-Fastest-x1  , Yolov3 or Yolov4 on images or video inputs
+*Run Yolo-Fastest , Yolo-Fastest-x1  , Yolov3 or Yolov4 on image or video inputs
 ## Demo on image input
-*Note: change  .data , .cfg , .weights and input video file in `video_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
+*Note: change  .data , .cfg , .weights and input image file in `image_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
+
 ```
   sh image_yolov3.sh
 ```
 ## Demo on video input
 *Note: Use any input video and place in the `data` folder or use `0` in the `video_yolov3.sh` for webcam
 
-*Note: change  .data , .cfg , .weights and input image file in `image_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
+*Note: change  .data , .cfg , .weights and input video file in `video_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
 
 ```
   sh video_yolov3.sh
 ```
+
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/predictions.jpg)
 

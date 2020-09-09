@@ -9,7 +9,7 @@
 * Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework
 * The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
 
-# Evaluating indicator
+# Evaluating indicator/Benchmark
 Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Weight size
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|320|11.36ms|5.48ms|0.55BFlops|3.0MB
@@ -18,6 +18,16 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 * ***Test platform Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
+
+# Pacal VOC Index comparison
+Network|Model Size|mAP(VOC 2017)|FLOPS
+:---:|:---:|:---:|:---:
+Tiny YOLOv2|60.5MB|57.1%|6.97BFlops
+Tiny YOLOv3|33.4MB|58.4%|5.52BFlops
+YOLO Nano|4.0MB|69.1%|4.51Bflops
+Yolo Fastest|1.3MB|61.02%|0.23Bflops
+Yolo Fastest-XL|3.5MB|68.80%|0.70Bflops
+
 # Compile 
 ## How to compile on Linux
 * This repo is based on Darknet project so the instructions for compiling the project are same

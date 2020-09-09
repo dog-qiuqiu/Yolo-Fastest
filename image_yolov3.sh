@@ -1,6 +1,6 @@
 
 
-./darknet detector test ./cfg/coco.data ./cfg/yolov3.cfg ./yolov3.weights data/dog.jpg -i 0 -thresh 0.25
+./darknet detector  test ./data/voc.data  ./Yolo-Fastest/yolo-fastest.cfg  ./Yolo-Fastest/yolo-fastest.weights  data/dog.jpg  -i 0 -thresh 0.25
 
 
 

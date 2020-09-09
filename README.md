@@ -19,8 +19,38 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 * Test platform Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
+# Compile 
+## How to compile on Linux
+* This repo is based on Darknet project so the instructions for compiling the project are same
+(https://github.com/MuhammadAsadJaved/darknet#how-to-compile-on-windows-legacy-way)
 
-# Test 
+
+Just do `make` in the Yolo-Fastest-master directory. Before make, you can set such options in the `Makefile`: [link](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/Makefile#L1)
+
+* `GPU=1` to build with CUDA to accelerate by using GPU (CUDA should be in `/usr/local/cuda`)
+* `CUDNN=1` to build with cuDNN v5-v7 to accelerate training by using GPU (cuDNN should be in `/usr/local/cudnn`)
+* `CUDNN_HALF=1` to build for Tensor Cores (on Titan V / Tesla V100 / DGX-2 and later) speedup Detection 3x, Training 2x
+* `OPENCV=1` to build with OpenCV 4.x/3.x/2.4.x - allows to detect on video files and video streams from network cameras or web-cams
+* Set the other options in the `Makefile` according to your need.
+
+# Test/Demo
+*Run Yolo-Fastest , Yolo-Fastest-x1  , Yolov3 or Yolov4 on image or video inputs
+## Demo on image input
+*Note: change  .data , .cfg , .weights and input image file in `image_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
+
+```
+  sh image_yolov3.sh
+```
+## Demo on video input
+*Note: Use any input video and place in the `data` folder or use `0` in the `video_yolov3.sh` for webcam
+
+*Note: change  .data , .cfg , .weights and input video file in `video_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
+
+```
+  sh video_yolov3.sh
+```
+
+
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/predictions.jpg)
 
 # How to Train

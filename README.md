@@ -16,7 +16,7 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 [Yolo-Fastest(our)](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|61.02|320|6.74ms|4.42ms|0.23BFlops|1.3MB
 [MobileNetV2 SSD-Lite](https://github.com/qfgaohao/pytorch-ssd#mobilenetv2-ssd-lite)|68.6|300|&ms|&ms|&BFlops|13.8MB
 [Yolo-Fastest-XL(our)](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|68.8|320|15.15ms|7.09ms|0.70BFlops|3.5MB
-* Test platform Kirin 990，Based on [NCNN](https://github.com/Tencent/ncnn)
+* Test platform Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
 

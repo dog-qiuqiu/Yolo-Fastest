@@ -19,7 +19,7 @@ Network|VOC mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOP
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
 
-# Pacal VOC Index comparison
+# Pascal VOC performance index comparison
 Network|Model Size|mAP(VOC 2017)|FLOPS
 :---:|:---:|:---:|:---:
 Tiny YOLOv2|60.5MB|57.1%|6.97BFlops

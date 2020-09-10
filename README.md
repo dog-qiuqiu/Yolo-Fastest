@@ -31,7 +31,24 @@ Pelee-SSD|21.68MB|70.09%|2.40Bflos
 ***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
 ***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
 * Performance indicators reference from the papers and public indicators in the github project
+# Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
+```
+loop_count = 4
+num_threads = 4
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+        yolo-fastest  min =   62.58  max =   62.76  avg =   62.70
+      squeezenet_ssd  min =  380.98  max =  391.39  avg =  387.53
+ squeezenet_ssd_int8  min =  458.05  max =  467.54  avg =  463.12
+       mobilenet_ssd  min =  212.31  max =  223.34  avg =  218.93
+  mobilenet_ssd_int8  min =  359.98  max =  374.03  avg =  365.17
+      mobilenet_yolo  min =  619.65  max =  635.44  avg =  628.29
+  mobilenetv2_yolov3  min =  294.92  max =  304.95  avg =  298.43
+         yolov4-tiny  min =  855.50  max = 1074.92  avg =  962.78
 
+
+```
 # Compile 
 ## How to compile on Linux
 * This repo is based on Darknet project so the instructions for compiling the project are same

@@ -26,8 +26,8 @@ Tiny YOLOv2|60.5MB|57.1%|6.97BFlops
 Tiny YOLOv3|33.4MB|58.4%|5.52BFlops
 YOLO Nano|4.0MB|69.1%|4.51Bflops
 MobileNetv2-SSD-Lite|13.8MB|68.6%|&Bflops
-Yolo Fastest|1.3MB|61.02%|0.23Bflops
-Yolo Fastest-XL|3.5MB|68.80%|0.70Bflops
+***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
+***Yolo Fastest-XL***|3.5MB|68.80%|0.70Bflops
 * Performance indicators reference from the papers and public indicators in the github project
 
 # Compile 

@@ -47,7 +47,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * Set the other options in the `Makefile` according to your need.
 
 # Test/Demo
-*Run Yolo-Fastest , Yolo-Fastest-x1  , Yolov3 or Yolov4 on image or video inputs
+*Run Yolo-Fastest , Yolo-Fastest-xl  , Yolov3 or Yolov4 on image or video inputs
 ## Demo on image input
 *Note: change  .data , .cfg , .weights and input image file in `image_yolov3.sh` for Yolo-Fastest-x1, Yolov3 and Yolov4
 

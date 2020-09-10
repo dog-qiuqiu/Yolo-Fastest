@@ -80,7 +80,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
   sh video_yolov3.sh
 ```
 ## Yolo-Fastest Test
-![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/projections_2.jpg)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/predictions_2.jpg)
 
 ## Yolo-Fastest-xl Test
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/projections.jpg)

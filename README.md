@@ -14,7 +14,7 @@ Network|VOC mAP(0.5)|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncn
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 [MobileNetV2-YOLOv3-Nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano)|65.27|30.13|320|11.36ms|5.48ms|0.55BFlops|3.0MB
 [Yolo-Fastest(our)](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|61.02|&|320|6.74ms|4.42ms|0.23BFlops|1.3MB
-[Yolo-Fastest-XL(our)](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|68.8|32.45|320|15.15ms|7.09ms|0.70BFlops|3.5MB
+[Yolo-Fastest-XL(our)](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|69.43|32.45|320|15.15ms|7.09ms|0.70BFlops|3.5MB
 * ***Test platform Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
@@ -27,7 +27,7 @@ Tiny YOLOv3|33.4MB|58.4%|5.52BFlops
 YOLO Nano|4.0MB|69.1%|4.51Bflops
 MobileNetv2-SSD-Lite|13.8MB|68.6%|&Bflops
 ***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
-***Yolo Fastest-XL***|3.5MB|68.80%|0.70Bflops
+***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
 * Performance indicators reference from the papers and public indicators in the github project
 
 # Compile 

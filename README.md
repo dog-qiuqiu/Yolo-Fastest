@@ -81,7 +81,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 ```
 
 
-![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/predictions.jpg)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/projections.jpg)
 
 # How to Train
 ## Generate a pre-trained model for the initialization of the model backbone

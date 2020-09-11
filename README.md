@@ -104,6 +104,8 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * darknet2ncnn: https://github.com/Tencent/ncnn/tree/master/tools/darknet
 ### NCNN C++ Sample
 * //
+### NCNN Android Sample
+* https://github.com/WZTENG/YOLOv5_NCNN
 ## MNN/TNN/NNIE
 * https://github.com/dog-qiuqiu/MobileNet-Yolo#darknet2caffe-tutorial
 ## ONNX

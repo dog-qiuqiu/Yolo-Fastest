@@ -2,6 +2,8 @@
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 * 中文介绍https://zhuanlan.zhihu.com/p/234506503 
+* 9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
+
 # :zap:Yolo-Fastest:zap:
 * Simple, fast, compact, easy to transplant
 * A real-time target detection algorithm for all platforms

@@ -30,6 +30,8 @@ MobileNetV2-YOLOv3|11.52MB|70.20%|2.02Bflos
 Pelee-SSD|21.68MB|70.09%|2.40Bflos
 ***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
 ***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
+***MobileNetv2-Yolo-Lite***|18.5MB|73.43%|1.80Bflops
+
 * Performance indicators reference from the papers and public indicators in the github project
 # Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
 ```

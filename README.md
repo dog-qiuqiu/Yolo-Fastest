@@ -1,7 +1,7 @@
 
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
-
+* 中文介绍https://zhuanlan.zhihu.com/p/234506503 
 # :zap:Yolo-Fastest:zap:
 * Simple, fast, compact, easy to transplant
 * A real-time target detection algorithm for all platforms

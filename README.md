@@ -105,7 +105,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * NCNN supports direct conversion of darknet models
 * darknet2ncnn: https://github.com/Tencent/ncnn/tree/master/tools/darknet
 ### NCNN C++ Sample
-* //
+* https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
 ### NCNN Android Sample
 * https://github.com/WZTENG/YOLOv5_NCNN
 ## MNN/TNN/NNIE

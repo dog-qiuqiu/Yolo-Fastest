@@ -35,6 +35,8 @@ Pelee-SSD|21.68MB|70.09%|2.40Bflos
 ***MobileNetv2-Yolo-Lite***|8.0MB|73.26%|1.80Bflops
 
 * Performance indicators reference from the papers and public indicators in the github project
+* MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
+
 # Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
 ```
 loop_count = 4

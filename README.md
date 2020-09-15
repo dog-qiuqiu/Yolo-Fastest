@@ -4,7 +4,7 @@
 * 中文介绍https://zhuanlan.zhihu.com/p/234506503 
 * 9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
 
-[![DOI](https://zenodo.org/badge/289169806.svg)](https://zenodo.org/badge/latestdoi/289169806)
+<a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>
 
 # :zap:Yolo-Fastest:zap:
 * Simple, fast, compact, easy to transplant

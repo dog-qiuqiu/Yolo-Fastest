@@ -119,7 +119,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * https://github.com/dog-qiuqiu/MobileNet-Yolo#darknet2caffe-tutorial
 ## ONNX&TensorRT
 * https://github.com/CaoWGG/TensorRT-YOLOv4
-* It is not efficient to run on Psacal and earlier GPU architectures. It is not recommended to deploy on such devices such as jeston nano(17ms/img), Tx1, Tx2, but there is no such problem in turing gpu, such as jetson-xavier-nx Can run efficiently
+* It is not efficient to run on Psacal and earlier GPU architectures. It is not recommended to deploy on such devices such as jeston nano(17ms/img), Tx1, Tx2, but there is no such problem in Turing GPU, such as jetson-Xavier-NX Can run efficiently
 # Thanks
 * https://github.com/AlexeyAB/darknet
 * https://github.com/Tencent/ncnn

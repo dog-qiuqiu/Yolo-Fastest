@@ -11,7 +11,7 @@
 * Simple, fast, compact, easy to transplant
 * A real-time target detection algorithm for all platforms
 * The fastest and smallest known universal target detection algorithm based on yolo
-* Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework
+* ***Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework***
 * The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
 
 # Evaluating indicator/Benchmark

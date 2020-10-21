@@ -3,7 +3,7 @@
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 * 中文介绍https://zhuanlan.zhihu.com/p/234506503 
 * 9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
-* 10.21: YOLOFACE-500K V3: 添加关键点训练支持 敬请期待...
+* 10.21: YoloFace-500K-ld: 添加关键点训练支持，已完成训练框架编写，近期更新...
 * ***On some GPUs (such as NVIDIA PASCAL: 1080ti, 1070...), Darknet Group convolution is not well supported, which will cause the problem of low training inference efficiency, but it will not appear on the 20 series and 16 series graphics cards, for example The reasoning time for 2080ti is 2ms, and 1660ti is 3ms. It is suspected to be the cause of CUDNN. It is recommended that users in this situation use pytorch for training and inference***
 * Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3
 

@@ -1,5 +1,5 @@
 
-
+*YOLOFACE-500K V3: 添加关键点训练支持 敬请期待...
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 * 中文介绍https://zhuanlan.zhihu.com/p/234506503 
 * 9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample

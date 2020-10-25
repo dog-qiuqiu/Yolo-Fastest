@@ -5,7 +5,7 @@
 * 9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
 * ***On some GPUs (such as NVIDIA PASCAL: 1080ti, 1070...), Darknet Group convolution is not well supported, which will cause the problem of low training inference efficiency, but it will not appear on the 20 series and 16 series graphics cards, for example The reasoning time for 2080ti is 2ms, and 1660ti is 3ms. It is suspected to be the cause of CUDNN. It is recommended that users in this situation use pytorch for training and inference***
 * ***在一些GPU上（如NVIDIA PASCAL:1080ti，1070…），Darknet分组卷积没有得到很好的支持，这会导致训练/推理效率低下的问题，但在20系列和16系列显卡上不会出现，例如2080ti的推理时间为2ms，1660ti为3ms，可能是CUDNN的原因。建议这种情况下的用户使用pytorch进行训练和推理***
-
+* Darknet CPU推理效率优化不好，不建议使用Darknet作为CPU端的推理框架，建议使用NCNN
 * Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3
 
 # :zap:Yolo-Fastest:zap: <a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>

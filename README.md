@@ -19,11 +19,12 @@
 
 # Evaluating indicator/Benchmark
 Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Weight size
-:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
+:---:|:---:|:---:|:---:|:---:|:---:|:---:
 [Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|23.65|320X320|6.74ms|4.42ms|0.23BFlops|1.3MB
 [Yolo-Fastest-XL](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest)|32.45|320X320|15.15ms|7.09ms|0.70BFlops|3.5MB
 [Yolo-Fastest-V2](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/Yolo-Fastest-V2)|*|384X224|*ms|*ms|0.19BFlops|1.1MB
 * ***Test platform Kirin 990 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
+* COCO 2017 Val mAP
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
 

@@ -7,6 +7,7 @@
 * ***在一些GPU上（如NVIDIA PASCAL:1080ti，1070…），Darknet分组卷积没有得到很好的支持，这会导致训练/推理效率低下的问题，但在20系列和16系列显卡上不会出现，例如2080ti的推理时间为2ms，1660ti为3ms，可能是CUDNN的原因。建议这种情况下的用户使用pytorch进行训练和推理***
 * ***Darknet CPU推理效率优化不好，不建议使用Darknet作为CPU端的推理框架，建议使用NCNN***
 * Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3
+* Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s 
 
 # :zap:Yolo-Fastest:zap: <a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>
 * Simple, fast, compact, easy to transplant

@@ -1,1 +1,0 @@
-darknet.exe detector train cfg/voc.data yolo-voc.cfg darknet19_448.conv.23

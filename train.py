@@ -29,7 +29,7 @@ hyp = {'giou': 3.54,  # giou loss gain
        'obj': 64.3,  # obj loss gain (*=img_size/320 if img_size != 320)
        'obj_pw': 1.0,  # obj BCELoss positive_weight
        'iou_t': 0.20,  # iou training threshold
-       'lr0': 0.01,  # initial learning rate (SGD=5E-3, Adam=5E-4)
+       'lr0': 0.001,  # initial learning rate (SGD=5E-3, Adam=5E-4)
        'lrf': 0.0005,  # final learning rate (with cos scheduler)
        'momentum': 0.937,  # SGD momentum
        'weight_decay': 0.0005,  # optimizer weight decay
@@ -247,7 +247,7 @@ def train(hyp):
             dataset.indices = random.choices(range(dataset.n), weights=image_weights, k=dataset.n)  # rand weighted idx
 
         mloss = torch.zeros(4).to(device)  # mean losses
-        print(('\n' + '%10s' * 8) % ('Epoch', 'gpu_mem', 'GIoU', 'obj', 'cls', 'total', 'targets', 'img_size'))
+        print(('\n' + '%10s' * 9) % ('Epoch', 'gpu_mem', 'LR', 'GIoU', 'obj', 'cls', 'total', 'targets', 'img_size'))
         pbar = tqdm(enumerate(dataloader), total=nb)  # progress bar
         for i, (imgs, targets, paths, _) in pbar:  # batch -------------------------------------------------------------
             ni = i + nb * epoch  # number integrated batches (since train start)
@@ -297,11 +297,11 @@ def train(hyp):
                 optimizer.step()
                 optimizer.zero_grad()
                 ema.update(model)
-
-            # Print
+            # Print 
+            optlr = optimizer.param_groups[0]["lr"]
             mloss = (mloss * i + loss_items) / (i + 1)  # update mean losses
             mem = '%.3gG' % (torch.cuda.memory_cached() / 1E9 if torch.cuda.is_available() else 0)  # (GB)
-            s = ('%10s' * 2 + '%10.3g' * 6) % ('%g/%g' % (epoch, epochs - 1), mem, *mloss, len(targets), img_size)
+            s = ('%10s' * 2 + '%10.3g' * 7) % ('%g/%g' % (epoch, epochs - 1), mem,  optlr, *mloss, len(targets), img_size)
             pbar.set_description(s)
 
             # Plot

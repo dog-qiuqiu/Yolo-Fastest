@@ -1,0 +1,6 @@
+classes= 80
+train  = ~/COCO/train2017.txt
+valid  = ~/COCO/val2017.txt
+names = coco.names
+backup = model
+

@@ -1,4 +1,10 @@
-
+# :zap:Yolo-Fastest:zap: <a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>
+* Simple, fast, compact, easy to transplant
+* A real-time target detection algorithm for all platforms
+* The fastest and smallest known universal target detection algorithm based on yolo
+* ***Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework***
+* Based on NCNN deployed on RK3399 ,Raspberry Pi 4b... and other embedded devices to achieve full real-time 30fps+
+* The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 * 2021.3.16: 修复分组卷积在某些旧架构GPU推理耗时异常的问题
@@ -10,15 +16,6 @@
 * ***Darknet CPU reasoning efficiency optimization is not good, it is not recommended to use Darknet as the CPU side reasoning framework, it is recommended to use ncnn***
 * Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3
 * ***Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s*** 
-
-# :zap:Yolo-Fastest:zap: <a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>
-* Simple, fast, compact, easy to transplant
-* A real-time target detection algorithm for all platforms
-* The fastest and smallest known universal target detection algorithm based on yolo
-* ***Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework***
-* Based on NCNN deployed on RK3399 ,Raspberry Pi 4b... and other embedded devices to achieve full real-time 30fps+
-* The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
-
 
 # Evaluating indicator/Benchmark
 Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Params|Weight size

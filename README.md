@@ -1,3 +1,6 @@
+* 2021.3.16: 修复分组卷积在某些旧架构GPU推理耗时异常的问题
+* 2021.9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
+
 # :zap:Yolo-Fastest:zap: <a href="https://doi.org/10.5281/zenodo.4030332"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4030332.svg" alt="DOI"></a>
 * Simple, fast, compact, easy to transplant
 * A real-time target detection algorithm for all platforms
@@ -7,14 +10,12 @@
 * The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
-* 2021.3.16: 修复分组卷积在某些旧架构GPU推理耗时异常的问题
-* 中文介绍https://zhuanlan.zhihu.com/p/234506503 
-* 2021.9.12：更新NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
+* ***中文介绍https://zhuanlan.zhihu.com/p/234506503*** 
 * ***相比AlexeyAB/darknet，此版本的darknet修复分组卷积在某些旧架构GPU推理耗时异常的问题(例如1050ti:40ms->4ms速度提升10倍)，强烈建议用此仓库框架训练模型***
 * ***Compared with AlexeyAB/darknet, this version of darknet fixes the problem of abnormal time-consuming inference of grouped convolution in some old architecture GPUs (for example, 1050ti:40ms->4ms speed up 10 times), it is strongly recommended to use this warehouse framework for training model***
 * ***Darknet CPU推理效率优化不好，不建议使用Darknet作为CPU端的推理框架，建议使用NCNN***
 * ***Darknet CPU reasoning efficiency optimization is not good, it is not recommended to use Darknet as the CPU side reasoning framework, it is recommended to use ncnn***
-* Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3
+* ***Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3***
 * ***Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s*** 
 
 # Evaluating indicator/Benchmark

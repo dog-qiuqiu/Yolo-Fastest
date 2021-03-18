@@ -16,7 +16,6 @@
 * ***Darknet CPU推理效率优化不好，不建议使用Darknet作为CPU端的推理框架，建议使用NCNN***
 * ***Darknet CPU reasoning efficiency optimization is not good, it is not recommended to use Darknet as the CPU side reasoning framework, it is recommended to use ncnn***
 * ***Based on pytorch training framework: https://github.com/dog-qiuqiu/yolov3***
-* ***Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s*** 
 
 # Evaluating indicator/Benchmark
 Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLOPS|Params|Weight size
@@ -121,6 +120,7 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * https://github.com/WZTENG/YOLOv5_NCNN
 ## MNN&TNN&MNN
 * https://github.com/dog-qiuqiu/MobileNet-Yolo#darknet2caffe-tutorial
+* ***Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s*** 
 ## ONNX&TensorRT
 * https://github.com/CaoWGG/TensorRT-YOLOv4
 * It is not efficient to run on Psacal and earlier GPU architectures. It is not recommended to deploy on such devices such as jeston nano(17ms/img), Tx1, Tx2, but there is no such problem in Turing GPU, such as jetson-Xavier-NX Can run efficiently

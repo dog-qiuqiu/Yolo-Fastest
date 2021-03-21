@@ -1,0 +1,244 @@
+ CUDA-version: 10010 (10010), cuDNN: 7.6.5, GPU count: 4  
+ OpenCV version: 4.9.1
+0,1,2,3
+ 0 : compute_capability = 610, cudnn_half = 0, GPU: GeForce GTX 1080 Ti 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+   layer   filters  size/strd(dil)      input                output
+   0 Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+conv      8       3 x 3/ 2    320 x 320 x   3 ->  160 x 160 x   8 0.011 BF
+   1 conv      8       1 x 1/ 1    160 x 160 x   8 ->  160 x 160 x   8 0.003 BF
+   2 conv      8/   8  3 x 3/ 1    160 x 160 x   8 ->  160 x 160 x   8 0.004 BF
+   3 conv      4       1 x 1/ 1    160 x 160 x   8 ->  160 x 160 x   4 0.002 BF
+   4 conv      8       1 x 1/ 1    160 x 160 x   4 ->  160 x 160 x   8 0.002 BF
+   5 conv      8/   8  3 x 3/ 1    160 x 160 x   8 ->  160 x 160 x   8 0.004 BF
+   6 conv      4       1 x 1/ 1    160 x 160 x   8 ->  160 x 160 x   4 0.002 BF
+   7 dropout    p = 0.150        102400  ->   102400
+   8 Shortcut Layer: 3,  wt = 0, wn = 0, outputs: 160 x 160 x   4 0.000 BF
+   9 conv     24       1 x 1/ 1    160 x 160 x   4 ->  160 x 160 x  24 0.005 BF
+  10 conv     24/  24  3 x 3/ 2    160 x 160 x  24 ->   80 x  80 x  24 0.003 BF
+  11 conv      8       1 x 1/ 1     80 x  80 x  24 ->   80 x  80 x   8 0.002 BF
+  12 conv     32       1 x 1/ 1     80 x  80 x   8 ->   80 x  80 x  32 0.003 BF
+  13 conv     32/  32  3 x 3/ 1     80 x  80 x  32 ->   80 x  80 x  32 0.004 BF
+  14 conv      8       1 x 1/ 1     80 x  80 x  32 ->   80 x  80 x   8 0.003 BF
+  15 dropout    p = 0.150        51200  ->   51200
+  16 Shortcut Layer: 11,  wt = 0, wn = 0, outputs:  80 x  80 x   8 0.000 BF
+  17 conv     32       1 x 1/ 1     80 x  80 x   8 ->   80 x  80 x  32 0.003 BF
+  18 conv     32/  32  3 x 3/ 1     80 x  80 x  32 ->   80 x  80 x  32 0.004 BF
+  19 conv      8       1 x 1/ 1     80 x  80 x  32 ->   80 x  80 x   8 0.003 BF
+  20 dropout    p = 0.150        51200  ->   51200
+  21 Shortcut Layer: 16,  wt = 0, wn = 0, outputs:  80 x  80 x   8 0.000 BF
+  22 conv     32       1 x 1/ 1     80 x  80 x   8 ->   80 x  80 x  32 0.003 BF
+  23 conv     32/  32  3 x 3/ 2     80 x  80 x  32 ->   40 x  40 x  32 0.001 BF
+  24 conv      8       1 x 1/ 1     40 x  40 x  32 ->   40 x  40 x   8 0.001 BF
+  25 conv     48       1 x 1/ 1     40 x  40 x   8 ->   40 x  40 x  48 0.001 BF
+  26 conv     48/  48  3 x 3/ 1     40 x  40 x  48 ->   40 x  40 x  48 0.001 BF
+  27 conv      8       1 x 1/ 1     40 x  40 x  48 ->   40 x  40 x   8 0.001 BF
+  28 dropout    p = 0.150        12800  ->   12800
+  29 Shortcut Layer: 24,  wt = 0, wn = 0, outputs:  40 x  40 x   8 0.000 BF
+  30 conv     48       1 x 1/ 1     40 x  40 x   8 ->   40 x  40 x  48 0.001 BF
+  31 conv     48/  48  3 x 3/ 1     40 x  40 x  48 ->   40 x  40 x  48 0.001 BF
+  32 conv      8       1 x 1/ 1     40 x  40 x  48 ->   40 x  40 x   8 0.001 BF
+  33 dropout    p = 0.150        12800  ->   12800
+  34 Shortcut Layer: 29,  wt = 0, wn = 0, outputs:  40 x  40 x   8 0.000 BF
+  35 conv     48       1 x 1/ 1     40 x  40 x   8 ->   40 x  40 x  48 0.001 BF
+  36 conv     48/  48  3 x 3/ 1     40 x  40 x  48 ->   40 x  40 x  48 0.001 BF
+  37 conv     16       1 x 1/ 1     40 x  40 x  48 ->   40 x  40 x  16 0.002 BF
+  38 conv     96       1 x 1/ 1     40 x  40 x  16 ->   40 x  40 x  96 0.005 BF
+  39 conv     96/  96  3 x 3/ 1     40 x  40 x  96 ->   40 x  40 x  96 0.003 BF
+  40 conv     16       1 x 1/ 1     40 x  40 x  96 ->   40 x  40 x  16 0.005 BF
+  41 dropout    p = 0.150        25600  ->   25600
+  42 Shortcut Layer: 37,  wt = 0, wn = 0, outputs:  40 x  40 x  16 0.000 BF
+  43 conv     96       1 x 1/ 1     40 x  40 x  16 ->   40 x  40 x  96 0.005 BF
+  44 conv     96/  96  3 x 3/ 1     40 x  40 x  96 ->   40 x  40 x  96 0.003 BF
+  45 conv     16       1 x 1/ 1     40 x  40 x  96 ->   40 x  40 x  16 0.005 BF
+  46 dropout    p = 0.150        25600  ->   25600
+  47 Shortcut Layer: 42,  wt = 0, wn = 0, outputs:  40 x  40 x  16 0.000 BF
+  48 conv     96       1 x 1/ 1     40 x  40 x  16 ->   40 x  40 x  96 0.005 BF
+  49 conv     96/  96  3 x 3/ 1     40 x  40 x  96 ->   40 x  40 x  96 0.003 BF
+  50 conv     16       1 x 1/ 1     40 x  40 x  96 ->   40 x  40 x  16 0.005 BF
+  51 dropout    p = 0.150        25600  ->   25600
+  52 Shortcut Layer: 47,  wt = 0, wn = 0, outputs:  40 x  40 x  16 0.000 BF
+  53 conv     96       1 x 1/ 1     40 x  40 x  16 ->   40 x  40 x  96 0.005 BF
+  54 conv     96/  96  3 x 3/ 1     40 x  40 x  96 ->   40 x  40 x  96 0.003 BF
+  55 conv     16       1 x 1/ 1     40 x  40 x  96 ->   40 x  40 x  16 0.005 BF
+  56 dropout    p = 0.150        25600  ->   25600
+  57 Shortcut Layer: 52,  wt = 0, wn = 0, outputs:  40 x  40 x  16 0.000 BF
+  58 conv     96       1 x 1/ 1     40 x  40 x  16 ->   40 x  40 x  96 0.005 BF
+  59 conv     96/  96  3 x 3/ 2     40 x  40 x  96 ->   20 x  20 x  96 0.001 BF
+  60 conv     24       1 x 1/ 1     20 x  20 x  96 ->   20 x  20 x  24 0.002 BF
+  61 conv    136       1 x 1/ 1     20 x  20 x  24 ->   20 x  20 x 136 0.003 BF
+  62 conv    136/ 136  3 x 3/ 1     20 x  20 x 136 ->   20 x  20 x 136 0.001 BF
+  63 conv     24       1 x 1/ 1     20 x  20 x 136 ->   20 x  20 x  24 0.003 BF
+  64 dropout    p = 0.150        9600  ->   9600
+  65 Shortcut Layer: 60,  wt = 0, wn = 0, outputs:  20 x  20 x  24 0.000 BF
+  66 conv    136       1 x 1/ 1     20 x  20 x  24 ->   20 x  20 x 136 0.003 BF
+  67 conv    136/ 136  3 x 3/ 1     20 x  20 x 136 ->   20 x  20 x 136 0.001 BF
+  68 conv     24       1 x 1/ 1     20 x  20 x 136 ->   20 x  20 x  24 0.003 BF
+  69 dropout    p = 0.150        9600  ->   9600
+  70 Shortcut Layer: 65,  wt = 0, wn = 0, outputs:  20 x  20 x  24 0.000 BF
+  71 conv    136       1 x 1/ 1     20 x  20 x  24 ->   20 x  20 x 136 0.003 BF
+  72 conv    136/ 136  3 x 3/ 1     20 x  20 x 136 ->   20 x  20 x 136 0.001 BF
+  73 conv     24       1 x 1/ 1     20 x  20 x 136 ->   20 x  20 x  24 0.003 BF
+  74 dropout    p = 0.150        9600  ->   9600
+  75 Shortcut Layer: 70,  wt = 0, wn = 0, outputs:  20 x  20 x  24 0.000 BF
+  76 conv    136       1 x 1/ 1     20 x  20 x  24 ->   20 x  20 x 136 0.003 BF
+  77 conv    136/ 136  3 x 3/ 1     20 x  20 x 136 ->   20 x  20 x 136 0.001 BF
+  78 conv     24       1 x 1/ 1     20 x  20 x 136 ->   20 x  20 x  24 0.003 BF
+  79 dropout    p = 0.150        9600  ->   9600
+  80 Shortcut Layer: 75,  wt = 0, wn = 0, outputs:  20 x  20 x  24 0.000 BF
+  81 conv    136       1 x 1/ 1     20 x  20 x  24 ->   20 x  20 x 136 0.003 BF
+  82 conv    136/ 136  3 x 3/ 2     20 x  20 x 136 ->   10 x  10 x 136 0.000 BF
+  83 conv     48       1 x 1/ 1     10 x  10 x 136 ->   10 x  10 x  48 0.001 BF
+  84 conv    224       1 x 1/ 1     10 x  10 x  48 ->   10 x  10 x 224 0.002 BF
+  85 conv    224/ 224  3 x 3/ 1     10 x  10 x 224 ->   10 x  10 x 224 0.000 BF
+  86 conv     48       1 x 1/ 1     10 x  10 x 224 ->   10 x  10 x  48 0.002 BF
+  87 dropout    p = 0.150        4800  ->   4800
+  88 Shortcut Layer: 83,  wt = 0, wn = 0, outputs:  10 x  10 x  48 0.000 BF
+  89 conv    224       1 x 1/ 1     10 x  10 x  48 ->   10 x  10 x 224 0.002 BF
+  90 conv    224/ 224  3 x 3/ 1     10 x  10 x 224 ->   10 x  10 x 224 0.000 BF
+  91 conv     48       1 x 1/ 1     10 x  10 x 224 ->   10 x  10 x  48 0.002 BF
+  92 dropout    p = 0.150        4800  ->   4800
+  93 Shortcut Layer: 88,  wt = 0, wn = 0, outputs:  10 x  10 x  48 0.000 BF
+  94 conv    224       1 x 1/ 1     10 x  10 x  48 ->   10 x  10 x 224 0.002 BF
+  95 conv    224/ 224  3 x 3/ 1     10 x  10 x 224 ->   10 x  10 x 224 0.000 BF
+  96 conv     48       1 x 1/ 1     10 x  10 x 224 ->   10 x  10 x  48 0.002 BF
+  97 dropout    p = 0.150        4800  ->   4800
+  98 Shortcut Layer: 93,  wt = 0, wn = 0, outputs:  10 x  10 x  48 0.000 BF
+  99 conv    224       1 x 1/ 1     10 x  10 x  48 ->   10 x  10 x 224 0.002 BF
+ 100 conv    224/ 224  3 x 3/ 1     10 x  10 x 224 ->   10 x  10 x 224 0.000 BF
+ 101 conv     48       1 x 1/ 1     10 x  10 x 224 ->   10 x  10 x  48 0.002 BF
+ 102 dropout    p = 0.150        4800  ->   4800
+ 103 Shortcut Layer: 98,  wt = 0, wn = 0, outputs:  10 x  10 x  48 0.000 BF
+ 104 conv    224       1 x 1/ 1     10 x  10 x  48 ->   10 x  10 x 224 0.002 BF
+ 105 conv    224/ 224  3 x 3/ 1     10 x  10 x 224 ->   10 x  10 x 224 0.000 BF
+ 106 conv     48       1 x 1/ 1     10 x  10 x 224 ->   10 x  10 x  48 0.002 BF
+ 107 dropout    p = 0.150        4800  ->   4800
+ 108 Shortcut Layer: 103,  wt = 0, wn = 0, outputs:  10 x  10 x  48 0.000 BF
+ 109 max                3x 3/ 1     10 x  10 x  48 ->   10 x  10 x  48 0.000 BF
+ 110 route  108 		                           ->   10 x  10 x  48 
+ 111 max                5x 5/ 1     10 x  10 x  48 ->   10 x  10 x  48 0.000 BF
+ 112 route  108 		                           ->   10 x  10 x  48 
+ 113 max                9x 9/ 1     10 x  10 x  48 ->   10 x  10 x  48 0.000 BF
+ 114 route  113 111 109 108 	                   ->   10 x  10 x 192 
+ 115 conv     96       1 x 1/ 1     10 x  10 x 192 ->   10 x  10 x  96 0.004 BF
+ 116 conv     96/  96  5 x 5/ 1     10 x  10 x  96 ->   10 x  10 x  96 0.000 BF
+ 117 conv     96       1 x 1/ 1     10 x  10 x  96 ->   10 x  10 x  96 0.002 BF
+ 118 conv     96/  96  5 x 5/ 1     10 x  10 x  96 ->   10 x  10 x  96 0.000 BF
+ 119 conv     96       1 x 1/ 1     10 x  10 x  96 ->   10 x  10 x  96 0.002 BF
+ 120 conv    255       1 x 1/ 1     10 x  10 x  96 ->   10 x  10 x 255 0.005 BF
+ 121 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, obj_norm: 1.00, cls_norm: 1.00, delta_norm: 1.00, scale_x_y: 1.00
+nms_kind: greedynms (1), beta = 0.600000 
+ 122 route  115 		                           ->   10 x  10 x  96 
+ 123 upsample                 2x    10 x  10 x  96 ->   20 x  20 x  96
+ 124 route  123 80 	                           ->   20 x  20 x 120 
+ 125 conv    120/ 120  5 x 5/ 1     20 x  20 x 120 ->   20 x  20 x 120 0.002 BF
+ 126 conv    120       1 x 1/ 1     20 x  20 x 120 ->   20 x  20 x 120 0.012 BF
+ 127 conv    120/ 120  5 x 5/ 1     20 x  20 x 120 ->   20 x  20 x 120 0.002 BF
+ 128 conv    120       1 x 1/ 1     20 x  20 x 120 ->   20 x  20 x 120 0.012 BF
+ 129 conv    255       1 x 1/ 1     20 x  20 x 120 ->   20 x  20 x 255 0.024 BF
+ 130 yolo
+[yolo] params: iou loss: ciou (4), iou_norm: 0.07, obj_norm: 1.00, cls_norm: 1.00, delta_norm: 1.00, scale_x_y: 1.00
+nms_kind: greedynms (1), beta = 0.600000 
+Total BFLOPS 0.252 
+avg_outputs = 62893 
+ Allocate additional workspace_size = 1.23 MB 
+Loading weights from yolo-fastest-1.1.weights...
+ seen 64, trained: 14231 K-images (222 Kilo-batches_64) 
+Done! Loaded 131 layers from weights-file 
+
+ calculation mAP (mean average precision)...
+ Detection layer: 121 - type = 28 
+ Detection layer: 130 - type = 28 
+4952
+ detections_count = 897029, unique_truth_count = 36335  
+class_id = 0, name = person, ap = 45.27%   	 (TP = 4021, FP = 6119) 
+class_id = 1, name = bicycle, ap = 16.88%   	 (TP = 43, FP = 72) 
+class_id = 2, name = car, ap = 20.98%   	 (TP = 484, FP = 1112) 
+class_id = 3, name = motorcycle, ap = 36.12%   	 (TP = 129, FP = 160) 
+class_id = 4, name = airplane, ap = 57.68%   	 (TP = 81, FP = 57) 
+class_id = 5, name = bus, ap = 52.42%   	 (TP = 125, FP = 80) 
+class_id = 6, name = train, ap = 63.20%   	 (TP = 110, FP = 60) 
+class_id = 7, name = truck, ap = 18.15%   	 (TP = 70, FP = 104) 
+class_id = 8, name = boat, ap = 12.82%   	 (TP = 70, FP = 188) 
+class_id = 9, name = traffic light, ap = 9.76%   	 (TP = 76, FP = 162) 
+class_id = 10, name = fire hydrant, ap = 49.26%   	 (TP = 46, FP = 40) 
+class_id = 11, name = stop sign, ap = 51.04%   	 (TP = 39, FP = 21) 
+class_id = 12, name = parking meter, ap = 25.85%   	 (TP = 13, FP = 5) 
+class_id = 13, name = bench, ap = 12.02%   	 (TP = 43, FP = 55) 
+class_id = 14, name = bird, ap = 14.24%   	 (TP = 64, FP = 137) 
+class_id = 15, name = cat, ap = 59.32%   	 (TP = 98, FP = 126) 
+class_id = 16, name = dog, ap = 41.95%   	 (TP = 80, FP = 95) 
+class_id = 17, name = horse, ap = 43.46%   	 (TP = 120, FP = 151) 
+class_id = 18, name = sheep, ap = 33.25%   	 (TP = 147, FP = 285) 
+class_id = 19, name = cow, ap = 35.18%   	 (TP = 146, FP = 205) 
+class_id = 20, name = elephant, ap = 59.49%   	 (TP = 151, FP = 152) 
+class_id = 21, name = bear, ap = 58.50%   	 (TP = 46, FP = 44) 
+class_id = 22, name = zebra, ap = 66.36%   	 (TP = 172, FP = 123) 
+class_id = 23, name = giraffe, ap = 65.48%   	 (TP = 150, FP = 63) 
+class_id = 24, name = backpack, ap = 1.91%   	 (TP = 4, FP = 22) 
+class_id = 25, name = umbrella, ap = 21.44%   	 (TP = 91, FP = 138) 
+class_id = 26, name = handbag, ap = 0.61%   	 (TP = 1, FP = 23) 
+class_id = 27, name = tie, ap = 10.44%   	 (TP = 31, FP = 94) 
+class_id = 28, name = suitcase, ap = 12.93%   	 (TP = 39, FP = 78) 
+class_id = 29, name = frisbee, ap = 27.25%   	 (TP = 28, FP = 41) 
+class_id = 30, name = skis, ap = 11.67%   	 (TP = 37, FP = 132) 
+class_id = 31, name = snowboard, ap = 10.36%   	 (TP = 6, FP = 10) 
+class_id = 32, name = sports ball, ap = 17.34%   	 (TP = 48, FP = 62) 
+class_id = 33, name = kite, ap = 25.58%   	 (TP = 117, FP = 232) 
+class_id = 34, name = baseball bat, ap = 11.47%   	 (TP = 15, FP = 27) 
+class_id = 35, name = baseball glove, ap = 10.58%   	 (TP = 20, FP = 61) 
+class_id = 36, name = skateboard, ap = 18.58%   	 (TP = 44, FP = 85) 
+class_id = 37, name = surfboard, ap = 14.43%   	 (TP = 50, FP = 172) 
+class_id = 38, name = tennis racket, ap = 22.89%   	 (TP = 67, FP = 116) 
+class_id = 39, name = bottle, ap = 7.63%   	 (TP = 69, FP = 146) 
+class_id = 40, name = wine glass, ap = 7.97%   	 (TP = 18, FP = 67) 
+class_id = 41, name = cup, ap = 13.11%   	 (TP = 116, FP = 243) 
+class_id = 42, name = fork, ap = 4.41%   	 (TP = 9, FP = 13) 
+class_id = 43, name = knife, ap = 1.48%   	 (TP = 2, FP = 14) 
+class_id = 44, name = spoon, ap = 0.77%   	 (TP = 1, FP = 6) 
+class_id = 45, name = bowl, ap = 23.25%   	 (TP = 134, FP = 241) 
+class_id = 46, name = banana, ap = 8.99%   	 (TP = 39, FP = 105) 
+class_id = 47, name = apple, ap = 5.32%   	 (TP = 13, FP = 37) 
+class_id = 48, name = sandwich, ap = 23.40%   	 (TP = 35, FP = 67) 
+class_id = 49, name = orange, ap = 16.69%   	 (TP = 52, FP = 91) 
+class_id = 50, name = broccoli, ap = 16.88%   	 (TP = 65, FP = 164) 
+class_id = 51, name = carrot, ap = 7.64%   	 (TP = 27, FP = 80) 
+class_id = 52, name = hot dog, ap = 14.46%   	 (TP = 11, FP = 31) 
+class_id = 53, name = pizza, ap = 41.55%   	 (TP = 113, FP = 124) 
+class_id = 54, name = donut, ap = 19.84%   	 (TP = 65, FP = 152) 
+class_id = 55, name = cake, ap = 18.44%   	 (TP = 45, FP = 72) 
+class_id = 56, name = chair, ap = 10.04%   	 (TP = 142, FP = 275) 
+class_id = 57, name = couch, ap = 29.89%   	 (TP = 53, FP = 101) 
+class_id = 58, name = potted plant, ap = 10.76%   	 (TP = 29, FP = 84) 
+class_id = 59, name = bed, ap = 43.32%   	 (TP = 57, FP = 71) 
+class_id = 60, name = dining table, ap = 22.00%   	 (TP = 183, FP = 283) 
+class_id = 61, name = toilet, ap = 58.93%   	 (TP = 94, FP = 89) 
+class_id = 62, name = tv, ap = 47.13%   	 (TP = 123, FP = 107) 
+class_id = 63, name = laptop, ap = 40.93%   	 (TP = 75, FP = 112) 
+class_id = 64, name = mouse, ap = 32.37%   	 (TP = 29, FP = 26) 
+class_id = 65, name = remote, ap = 4.22%   	 (TP = 12, FP = 19) 
+class_id = 66, name = keyboard, ap = 31.90%   	 (TP = 51, FP = 67) 
+class_id = 67, name = cell phone, ap = 15.28%   	 (TP = 30, FP = 30) 
+class_id = 68, name = microwave, ap = 39.49%   	 (TP = 20, FP = 14) 
+class_id = 69, name = oven, ap = 24.75%   	 (TP = 34, FP = 45) 
+class_id = 70, name = toaster, ap = 2.32%   	 (TP = 0, FP = 0) 
+class_id = 71, name = sink, ap = 20.24%   	 (TP = 46, FP = 86) 
+class_id = 72, name = refrigerator, ap = 30.95%   	 (TP = 42, FP = 44) 
+class_id = 73, name = book, ap = 1.74%   	 (TP = 45, FP = 334) 
+class_id = 74, name = clock, ap = 32.38%   	 (TP = 103, FP = 127) 
+class_id = 75, name = vase, ap = 13.89%   	 (TP = 40, FP = 48) 
+class_id = 76, name = scissors, ap = 6.25%   	 (TP = 1, FP = 3) 
+class_id = 77, name = teddy bear, ap = 33.81%   	 (TP = 59, FP = 56) 
+class_id = 78, name = hair drier, ap = 0.00%   	 (TP = 0, FP = 0) 
+class_id = 79, name = toothbrush, ap = 1.16%   	 (TP = 0, FP = 2) 
+
+ for conf_thresh = 0.25, precision = 0.39, recall = 0.25, F1-score = 0.31 
+ for conf_thresh = 0.25, TP = 9204, FP = 14585, FN = 27131, average IoU = 27.42 % 
+
+ IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+ mean average precision (mAP@0.50) = 0.243967, or 24.40 % 
+Total Detection Time: 133 Seconds
+

@@ -45,7 +45,7 @@ Pelee-SSD|21.68MB|70.09%|2.40Bflos
 * Performance indicators reference from the papers and public indicators in the github project
 * MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
 
-# Multi-platform benchmark
+# Yolo-Fastest-1.1 Multi-platform benchmark
 Equipment|Computing backend|System|Run time
 :---:|:---:|:---:|:---:
 Mi 11|Snapdragon 888|Android(arm64)|5.59ms

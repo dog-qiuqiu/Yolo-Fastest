@@ -22,7 +22,7 @@ Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLO
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 [Yolo-Fastest-1.1](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ModelZoo/yolo-fastest-1.1_coco)|24.40 %|320X320|5.59 ms|7.52 ms|0.252BFlops|0.35M|1.4M
 [Yolo-Fastest-1.1-xl](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ModelZoo/yolo-fastest-1.1_coco)|34.33 %|320X320|%ms|%ms|0.725BFlops|0.925M|3.7M
-* ***Test platform Snapdragon 888 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
+* ***Test platform Mi 11 Snapdragon 888 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
 * COCO 2017 Val mAP（no group label）
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios

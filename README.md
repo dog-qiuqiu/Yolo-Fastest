@@ -8,7 +8,6 @@
 * The fastest and smallest known universal target detection algorithm based on yolo
 * ***Optimized design for ARM mobile terminal, optimized to support [NCNN](https://github.com/Tencent/ncnn) reasoning framework***
 * Based on NCNN deployed on RK3399 ,Raspberry Pi 4b... and other embedded devices to achieve full real-time 30fps+
-* The speed is 45% faster than [mobilenetv2-yolov3-nano](https://github.com/dog-qiuqiu/MobileNetv2-YOLOV3/tree/master/MobileNetV2-YOLOv3-Nano), and the parameter amount is reduced by 56%
 
 ![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
 * ***中文介绍https://zhuanlan.zhihu.com/p/234506503*** 

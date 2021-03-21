@@ -30,26 +30,12 @@ Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 4xCore)|Run Time(Ncnn 1xCore)|FLO
 * Suitable for hardware with extremely tight computing resources
 * This model is recommended to do some simple single object detection suitable for simple application scenarios
 
-# Pascal VOC performance index comparison
-Network|Model Size|mAP(VOC 2017)|FLOPS
-:---:|:---:|:---:|:---:
-Tiny YOLOv2|60.5MB|57.1%|6.97BFlops
-Tiny YOLOv3|33.4MB|58.4%|5.52BFlops
-YOLO Nano|4.0MB|69.1%|4.51Bflops
-MobileNetv2-SSD-Lite|13.8MB|68.6%|&Bflops
-MobileNetV2-YOLOv3|11.52MB|70.20%|2.02Bflos
-Pelee-SSD|21.68MB|70.09%|2.40Bflos
-***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
-***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
-***MobileNetv2-Yolo-Lite***|8.0MB|73.26%|1.80Bflops
-* Performance indicators reference from the papers and public indicators in the github project
-* MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
-
 # Yolo-Fastest-1.1 Multi-platform benchmark
-Equipment|Computing backend|System|Run time
-:---:|:---:|:---:|:---:
-Mi 11|Snapdragon 888|Android(arm64)|5.59ms
-Mate 30|Kirin 990|Android(arm64)|6.12ms
+Equipment|Computing backend|System|Framework|Run time
+:---:|:---:|:---:|:---:|:---:
+Mi 11|Snapdragon 888|Android(arm64)|ncnn|5.59ms
+Mate 30|Kirin 990|Android(arm64)|ncnn|6.12ms
+Nvidia|Gtx 1050ti|Ubuntu(x64)|darknet|4.73ms
 
 
 # Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
@@ -67,9 +53,22 @@ cooling_down = 1
       mobilenet_yolo  min =  619.65  max =  635.44  avg =  628.29
   mobilenetv2_yolov3  min =  294.92  max =  304.95  avg =  298.43
          yolov4-tiny  min =  855.50  max = 1074.92  avg =  962.78
-
-
 ```
+# Pascal VOC performance index comparison
+Network|Model Size|mAP(VOC 2017)|FLOPS
+:---:|:---:|:---:|:---:
+Tiny YOLOv2|60.5MB|57.1%|6.97BFlops
+Tiny YOLOv3|33.4MB|58.4%|5.52BFlops
+YOLO Nano|4.0MB|69.1%|4.51Bflops
+MobileNetv2-SSD-Lite|13.8MB|68.6%|&Bflops
+MobileNetV2-YOLOv3|11.52MB|70.20%|2.02Bflos
+Pelee-SSD|21.68MB|70.09%|2.40Bflos
+***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
+***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
+***MobileNetv2-Yolo-Lite***|8.0MB|73.26%|1.80Bflops
+* Performance indicators reference from the papers and public indicators in the github project
+* MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
+
 # Compile 
 ## How to compile on Linux
 * This repo is based on Darknet project so the instructions for compiling the project are same

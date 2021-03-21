@@ -42,9 +42,15 @@ Pelee-SSD|21.68MB|70.09%|2.40Bflos
 ***Yolo Fastest***|1.3MB|61.02%|0.23Bflops
 ***Yolo Fastest-XL***|3.5MB|69.43%|0.70Bflops
 ***MobileNetv2-Yolo-Lite***|8.0MB|73.26%|1.80Bflops
-
 * Performance indicators reference from the papers and public indicators in the github project
 * MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
+
+# Multi-platform benchmark
+Equipment|Computing backend|System|Run time
+:---:|:---:|:---:|:---:
+Mi 11|Snapdragon 888|Android(arm64)|5.59ms
+Mate 30|Kirin 990|Android(arm64)|6.12ms
+
 
 # Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
 ```

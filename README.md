@@ -22,6 +22,9 @@ Network|COCO mAP(0.5)|Resolution|Run Time(Ncnn 1xCore)|Run Time(Ncnn 4xCore)|FLO
 :---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
 [Yolo-Fastest-1.1](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ModelZoo/yolo-fastest-1.1_coco)|24.40 %|320X320|5.59 ms|7.52 ms|0.252BFlops|0.35M|1.4M
 [Yolo-Fastest-1.1-xl](https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ModelZoo/yolo-fastest-1.1_coco)|34.33 %|320X320|%ms|%ms|0.725BFlops|0.925M|3.7M
+[Yolov3-Tiny-Prn](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov3-tiny-prn.cfg)|33.1%|416X416|%ms|%ms|3.5BFlops|4.7M|18.8M
+[Yolov4-Tiny](https://raw.githubusercontent.com/AlexeyAB/darknet/master/cfg/yolov4-tiny.cfg)|40.2%|416X416|%ms|%ms|6.9 BFlops|5.77M|23.1M
+
 * ***Test platform Mi 11 Snapdragon 888 CPU，Based on [NCNN](https://github.com/Tencent/ncnn)***
 * COCO 2017 Val mAP（no group label）
 * Suitable for hardware with extremely tight computing resources

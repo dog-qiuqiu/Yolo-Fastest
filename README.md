@@ -35,6 +35,7 @@ Equipment|Computing backend|System|Framework|Run time
 :---:|:---:|:---:|:---:|:---:
 Mi 11|Snapdragon 888|Android(arm64)|ncnn|5.59ms
 Mate 30|Kirin 990|Android(arm64)|ncnn|6.12ms
+Meizu 16|Snapdragon 845|Android(arm64)|ncnn|7.72ms
 Nvidia|Gtx 1050ti|Ubuntu(x64)|darknet|4.73ms
 Intel|i7-8700|Ubuntu(x64)|ncnn|5.78ms
 

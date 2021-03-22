@@ -29,8 +29,8 @@ int drawBoxes(cv::Mat srcImg, std::vector<TargetBox> boxes)
 int testCam() {
     YoloDet api;
     //Init model
-    api.init("model/yolo-fastest-1.1.param", 
-              "model/yolo-fastest-1.1.bin");
+    api.init("model/yolo-fastest-1.1_body.param", 
+              "model/yolo-fastest-1.1_body.bin");
 
     cv::Mat frame;    
     std::vector<TargetBox> output;

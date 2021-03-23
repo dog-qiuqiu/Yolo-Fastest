@@ -38,29 +38,14 @@ Mate 30|Kirin 990|Android(arm64)|ncnn|6.12ms
 Meizu 16|Snapdragon 845|Android(arm64)|ncnn|7.72ms
 Development board|Snapdragon 835(Monkey version)|Android(arm64)|ncnn|20.52ms
 Development board|RK3399|Linux(arm64)|ncnn|35.04ms
+Raspberrypi 3B|4xCortex-A53|Linux(arm64)|ncnn|62.31ms
 Nvidia|Gtx 1050ti|Ubuntu(x64)|darknet|4.73ms
 Intel|i7-8700|Ubuntu(x64)|ncnn|5.78ms
 * The above is a multi-core test benchmark
 * The above speed benchmark is tested by ***big core*** in big.little CPU
+* Raspberrypi 3B enable bf16s optimization
 * [Rk3399 needs to lock the cpu to the highest frequency](http://blog.sina.com.cn/s/blog_15d5280590102yarw.html), ncnn and enable bf16s optimization
 
-
-# Raspberrypi 3b Ncnn bf16s benchmark(4xA53 1.2Ghz)
-```
-loop_count = 4
-num_threads = 4
-powersave = 0
-gpu_device = -1
-cooling_down = 1
-        yolo-fastest  min =   62.58  max =   62.76  avg =   62.70
-      squeezenet_ssd  min =  380.98  max =  391.39  avg =  387.53
- squeezenet_ssd_int8  min =  458.05  max =  467.54  avg =  463.12
-       mobilenet_ssd  min =  212.31  max =  223.34  avg =  218.93
-  mobilenet_ssd_int8  min =  359.98  max =  374.03  avg =  365.17
-      mobilenet_yolo  min =  619.65  max =  635.44  avg =  628.29
-  mobilenetv2_yolov3  min =  294.92  max =  304.95  avg =  298.43
-         yolov4-tiny  min =  855.50  max = 1074.92  avg =  962.78
-```
 # Pascal VOC performance index comparison
 Network|Model Size|mAP(VOC 2017)|FLOPS
 :---:|:---:|:---:|:---:

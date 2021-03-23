@@ -129,10 +129,9 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 * Benchmark:https://github.com/Tencent/ncnn/tree/master/benchmark
 * NCNN supports direct conversion of darknet models
 * darknet2ncnn: https://github.com/Tencent/ncnn/tree/master/tools/darknet
-### NCNN C++ Sample
-* https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/ncnn_sample
-### NCNN Android Sample
-* https://github.com/WZTENG/YOLOv5_NCNN
+### NCNN Sample
+* CamSample:https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/sample/ncnn
+* AndroidSample: https://github.com/WZTENG/YOLOv5_NCNN
 ## MNN&TNN&MNN
 * https://github.com/dog-qiuqiu/MobileNet-Yolo#darknet2caffe-tutorial
 * ***Based on MNN: https://github.com/geekzhu001/Yolo-Fastest-MNN Run on : raspberry pi 4B 2G Input size : 320*320 Average inference time : 0.035s*** 

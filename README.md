@@ -43,7 +43,7 @@ Nvidia|Gtx 1050ti|Ubuntu(x64)|darknet|4.73ms
 Intel|i7-8700|Ubuntu(x64)|ncnn|5.78ms
 * The above is a multi-core test benchmark
 * The above speed benchmark is tested by ***big core*** in big.little CPU
-* Raspberrypi 3B enable bf16s optimization
+* Raspberrypi 3B enable bf16s optimization，64 Bit os: http://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-08-24/
 * [Rk3399 needs to lock the cpu to the highest frequency](http://blog.sina.com.cn/s/blog_15d5280590102yarw.html), ncnn and enable bf16s optimization
 
 # Pascal VOC performance index comparison

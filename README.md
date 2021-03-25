@@ -69,8 +69,8 @@ Raspberrypi 3B|Linux(arm64)|ncnn|62ms
 * Enable bf16s optimization，[Raspberrypi 64 Bit OS](http://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-08-24/)
 
 ## Demo
-![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
-![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/p1.jpg)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/p2.jpg)
 
 # Compile 
 ## How to compile on Linux

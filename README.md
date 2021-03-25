@@ -61,6 +61,17 @@ Pelee-SSD|21.68MB|70.09%|2.40Bflos
 * Performance indicators reference from the papers and public indicators in the github project
 * MobileNetv2-Yolo-Lite: https://github.com/dog-qiuqiu/MobileNet-Yolo#mobilenetv2-yolov3-litenano-darknet
 
+# Yolo-Fastest-1.1 Pedestrian detection
+Equipment|System|Framework|Run time
+:---:|:---:|:---:|:---:
+Raspberrypi 3B|Linux(arm64)|ncnn|62ms
+* Simple real-time pedestrian detection model based on yolo-fastest-1.1
+* Enable bf16s optimization，[Raspberrypi 64 Bit OS](http://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-08-24/)
+
+## Demo
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
+![image](https://github.com/dog-qiuqiu/Yolo-Fastest/blob/master/data/fast.jpg)
+
 # Compile 
 ## How to compile on Linux
 * This repo is based on Darknet project so the instructions for compiling the project are same

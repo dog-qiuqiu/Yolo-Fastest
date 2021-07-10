@@ -1,0 +1,6 @@
+classes= 1
+train  = train.txt
+valid  = val.txt
+names = ./body.names
+backup = model
+

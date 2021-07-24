@@ -139,3 +139,8 @@ Just do `make` in the Yolo-Fastest-master directory. Before make, you can set su
 # Thanks
 * https://github.com/AlexeyAB/darknet
 * https://github.com/Tencent/ncnn
+
+## Cite as
+dog-qiuqiu. (2021, July 24). dog-qiuqiu/Yolo-Fastest: 
+yolo-fastest-v1.1.0 (Version v.1.1.0). Zenodo. 
+http://doi.org/10.5281/zenodo.5131532

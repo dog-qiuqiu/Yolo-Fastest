@@ -38,8 +38,8 @@ Mate 30|Kirin 990|Android(arm64)|ncnn|6.12ms
 Meizu 16|Snapdragon 845|Android(arm64)|ncnn|7.72ms
 Development board|Snapdragon 835(Monkey version)|Android(arm64)|ncnn|20.52ms
 Development board|RK3399|Linux(arm64)|ncnn|35.04ms
-orangepi zero Lts|H2+ 4xCortex a7|Linux(armv7)|ncnn|550ms
 Raspberrypi 3B|4xCortex-A53|Linux(arm64)|ncnn|62.31ms
+Orangepi Zero Lts|H2+ 4xCortex-A7|Linux(armv7)|ncnn|550ms
 Nvidia|Gtx 1050ti|Ubuntu(x64)|darknet|4.73ms
 Intel|i7-8700|Ubuntu(x64)|ncnn|5.78ms
 * The above is a multi-core test benchmark

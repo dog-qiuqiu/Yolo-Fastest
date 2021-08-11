@@ -1,3 +1,4 @@
+* 2021.8.12: yolo-fastestV2版本已发布:https://github.com/dog-qiuqiu/Yolo-FastestV2
 * 2021.3.21: 对模型结构进行细微调整优化，更新Yolo-Fastest-1.1模型
 * 2021.3.19: NCNN Camera Demo https://github.com/dog-qiuqiu/Yolo-Fastest/tree/master/sample/ncnn
 * 2021.3.16: 修复分组卷积在某些旧架构GPU推理耗时异常的问题
